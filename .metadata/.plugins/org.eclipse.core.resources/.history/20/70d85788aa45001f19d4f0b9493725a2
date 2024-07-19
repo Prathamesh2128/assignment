@@ -1,0 +1,18 @@
+package assignment;
+
+import org.openqa.selenium.By;
+
+public class OurPolicy extends HomePage
+{	
+	public void calling() 
+	{
+		Utility();
+	}
+	
+	void policy()
+	{
+		handle();
+		driver.findElement(By.linkText("Privacy Policy")).click();
+		
+	}
+}

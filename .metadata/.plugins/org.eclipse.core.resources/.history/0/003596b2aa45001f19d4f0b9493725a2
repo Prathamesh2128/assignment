@@ -1,0 +1,22 @@
+package assignment;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+
+public class OurPolicy extends HomePage
+{	
+	public void calling() 
+	{
+		Utility();
+	}
+	
+	void policy()
+	{
+		
+		driver.findElement(By.linkText("Privacy Policy")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		handle();
+		
+	}
+}
